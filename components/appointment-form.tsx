@@ -117,7 +117,7 @@ export function AppointmentForm() {
       </button>
 
       {feedback ? (
-        <p className={`text-sm ${isError ? "text-red-700" : "text-emerald-700"}`}>
+        <p className={`text-sm ${isError ? "text-red-900" : "text-emerald-700"}`}>
           {feedback}
         </p>
       ) : null}
