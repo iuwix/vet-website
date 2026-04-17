@@ -57,11 +57,11 @@ export function AppointmentForm() {
 
   return (
     <form
-      className="space-y-4 rounded-2xl border border-blue-100 bg-white/95 p-6 shadow-xl"
+      className="space-y-4 rounded-2xl border border-red-100 bg-white/95 p-6 shadow-xl"
       onSubmit={handleSubmit}
     >
-      <h2 className="text-xl font-semibold text-blue-950">Quick Appointment</h2>
-      <p className="text-sm text-blue-700">
+      <h2 className="text-xl font-semibold text-red-950">Quick Appointment</h2>
+      <p className="text-sm text-red-700">
         Complete the form and we will call you back shortly.
       </p>
 
@@ -74,7 +74,7 @@ export function AppointmentForm() {
           onChange={(event) =>
             setFormState((prev) => ({ ...prev, name: event.target.value }))
           }
-          className="w-full rounded-lg border border-blue-200 px-4 py-3 text-sm outline-none transition focus:border-blue-500"
+          className="w-full rounded-lg border border-red-200 px-4 py-3 text-sm outline-none transition focus:border-red-500"
         />
         <input
           required
@@ -84,7 +84,7 @@ export function AppointmentForm() {
           onChange={(event) =>
             setFormState((prev) => ({ ...prev, phone: event.target.value }))
           }
-          className="w-full rounded-lg border border-blue-200 px-4 py-3 text-sm outline-none transition focus:border-blue-500"
+          className="w-full rounded-lg border border-red-200 px-4 py-3 text-sm outline-none transition focus:border-red-500"
         />
         <input
           required
@@ -94,7 +94,7 @@ export function AppointmentForm() {
           onChange={(event) =>
             setFormState((prev) => ({ ...prev, email: event.target.value }))
           }
-          className="w-full rounded-lg border border-blue-200 px-4 py-3 text-sm outline-none transition focus:border-blue-500"
+          className="w-full rounded-lg border border-red-200 px-4 py-3 text-sm outline-none transition focus:border-red-500"
         />
         <textarea
           required
@@ -104,14 +104,14 @@ export function AppointmentForm() {
           onChange={(event) =>
             setFormState((prev) => ({ ...prev, message: event.target.value }))
           }
-          className="w-full rounded-lg border border-blue-200 px-4 py-3 text-sm outline-none transition focus:border-blue-500"
+          className="w-full rounded-lg border border-red-200 px-4 py-3 text-sm outline-none transition focus:border-red-500"
         />
       </div>
 
       <button
         type="submit"
         disabled={isSubmitting}
-        className="w-full rounded-lg bg-blue-700 px-4 py-3 text-sm font-semibold text-white transition hover:bg-blue-800 disabled:cursor-not-allowed disabled:bg-blue-400"
+        className="w-full rounded-lg bg-red-700 px-4 py-3 text-sm font-semibold text-white transition hover:bg-red-800 disabled:cursor-not-allowed disabled:bg-red-400"
       >
         {isSubmitting ? "Sending..." : "Send"}
       </button>
