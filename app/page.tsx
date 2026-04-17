@@ -65,7 +65,7 @@ const navItems = [
 export default function HomePage() {
   return (
     <main className="pb-28">
-      <div className="bg-blue-950 text-blue-100">
+      <div className="bg-red-950 text-red-100">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-3 text-xs sm:flex-row sm:items-center sm:justify-between sm:text-sm">
           <div className="flex flex-wrap items-center gap-4">
             <span>Phone: 0720.123.123</span>
@@ -85,14 +85,14 @@ export default function HomePage() {
         </div>
       </div>
 
-      <header className="sticky top-0 z-40 border-b border-blue-100 bg-white/95 backdrop-blur">
+      <header className="sticky top-0 z-40 border-b border-red-100 bg-white/95 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4">
-          <a href="#hero" className="text-xl font-bold tracking-wide text-blue-900">
+          <a href="#hero" className="text-xl font-bold tracking-wide text-red-900">
             Rosetti Vet Clinic
           </a>
-          <nav className="hidden items-center gap-6 text-sm font-medium text-blue-800 md:flex">
+          <nav className="hidden items-center gap-6 text-sm font-medium text-red-800 md:flex">
             {navItems.map((item) => (
-              <a key={item.href} href={item.href} className="transition hover:text-blue-600">
+              <a key={item.href} href={item.href} className="transition hover:text-red-600">
                 {item.label}
               </a>
             ))}
@@ -102,13 +102,13 @@ export default function HomePage() {
 
       <section id="hero" className="mx-auto grid max-w-7xl gap-8 px-4 py-16 md:grid-cols-2 md:py-20">
         <div className="space-y-6">
-          <p className="inline-block rounded-full bg-blue-100 px-4 py-1 text-xs font-semibold uppercase tracking-wide text-blue-900">
+          <p className="inline-block rounded-full bg-red-100 px-4 py-1 text-xs font-semibold uppercase tracking-wide text-red-900">
             Family Vet Clinic
           </p>
-          <h1 className="text-4xl font-bold leading-tight text-blue-950 md:text-5xl">
+          <h1 className="text-4xl font-bold leading-tight text-red-950 md:text-5xl">
             Professional veterinary care for your whole family.
           </h1>
-          <p className="max-w-xl text-base text-blue-800 md:text-lg">
+          <p className="max-w-xl text-base text-red-800 md:text-lg">
             Our clinic combines modern medical services with an elegant, caring approach, so
             every visit feels safe and predictable.
           </p>
@@ -136,8 +136,8 @@ export default function HomePage() {
 
       <section id="services" className="bg-white py-16">
         <div className="mx-auto max-w-7xl px-4">
-          <h2 className="text-3xl font-bold text-blue-950">Services</h2>
-          <p className="mt-3 max-w-2xl text-blue-700">
+          <h2 className="text-3xl font-bold text-red-950">Services</h2>
+          <p className="mt-3 max-w-2xl text-red-700">
             We provide essential services for pet health, with a strong focus on prevention,
             precise diagnosis, and clear communication with owners.
           </p>
@@ -145,10 +145,10 @@ export default function HomePage() {
             {services.map((service) => (
               <article
                 key={service.title}
-                className="rounded-2xl border border-blue-100 bg-blue-50/40 p-6 shadow-sm"
+                className="rounded-2xl border border-red-100 bg-red-50/40 p-6 shadow-sm"
               >
-                <h3 className="text-xl font-semibold text-blue-900">{service.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-blue-700">{service.description}</p>
+                <h3 className="text-xl font-semibold text-red-900">{service.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-red-700">{service.description}</p>
               </article>
             ))}
           </div>
@@ -158,19 +158,19 @@ export default function HomePage() {
       <section id="pricing" className="py-16">
         <div className="mx-auto grid max-w-7xl gap-8 px-4 md:grid-cols-[1.2fr_1fr]">
           <div>
-            <h2 className="text-3xl font-bold text-blue-950">Transparent Pricing</h2>
-            <p className="mt-3 text-blue-700">
+            <h2 className="text-3xl font-bold text-red-950">Transparent Pricing</h2>
+            <p className="mt-3 text-red-700">
               Clear pricing structure for common services. For personalized treatment plans,
               contact us directly.
             </p>
-            <div className="mt-8 overflow-hidden rounded-2xl border border-blue-100 bg-white shadow-sm">
+            <div className="mt-8 overflow-hidden rounded-2xl border border-red-100 bg-white shadow-sm">
               {prices.map((item) => (
                 <div
                   key={item.service}
-                  className="flex items-center justify-between border-b border-blue-100 px-5 py-4 last:border-b-0"
+                  className="flex items-center justify-between border-b border-red-100 px-5 py-4 last:border-b-0"
                 >
-                  <span className="font-medium text-blue-900">{item.service}</span>
-                  <span className="text-sm font-semibold text-blue-700">{item.price}</span>
+                  <span className="font-medium text-red-900">{item.service}</span>
+                  <span className="text-sm font-semibold text-red-700">{item.price}</span>
                 </div>
               ))}
             </div>
@@ -187,15 +187,15 @@ export default function HomePage() {
 
       <section id="testimonials" className="bg-white py-16">
         <div className="mx-auto max-w-7xl px-4">
-          <h2 className="text-3xl font-bold text-blue-950">What Our Clients Say</h2>
-          <p className="mt-3 text-blue-700">
+          <h2 className="text-3xl font-bold text-red-950">What Our Clients Say</h2>
+          <p className="mt-3 text-red-700">
             Real feedback from families who trust us with their pets.
           </p>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {testimonials.map((testimonial) => (
               <article
                 key={testimonial.name}
-                className="rounded-2xl border border-blue-100 bg-blue-50/40 p-6 shadow-sm"
+                className="rounded-2xl border border-red-100 bg-red-50/40 p-6 shadow-sm"
               >
                 <div className="flex items-center gap-4">
                   <Image
@@ -203,14 +203,14 @@ export default function HomePage() {
                     alt={testimonial.name}
                     width={72}
                     height={72}
-                    className="h-16 w-16 rounded-full border border-blue-200 object-cover"
+                    className="h-16 w-16 rounded-full border border-red-200 object-cover"
                   />
                   <div>
-                    <h3 className="font-semibold text-blue-900">{testimonial.name}</h3>
-                    <p className="text-xs text-blue-600">{testimonial.role}</p>
+                    <h3 className="font-semibold text-red-900">{testimonial.name}</h3>
+                    <p className="text-xs text-red-600">{testimonial.role}</p>
                   </div>
                 </div>
-                <p className="mt-4 text-sm leading-relaxed text-blue-700">
+                <p className="mt-4 text-sm leading-relaxed text-red-700">
                   &ldquo;{testimonial.text}&rdquo;
                 </p>
               </article>
@@ -222,19 +222,19 @@ export default function HomePage() {
       <section id="contact" className="py-16">
         <div className="mx-auto grid max-w-7xl gap-8 px-4 md:grid-cols-2">
           <div>
-            <h2 className="text-3xl font-bold text-blue-950">Find Us</h2>
-            <p className="mt-3 text-blue-700">
+            <h2 className="text-3xl font-bold text-red-950">Find Us</h2>
+            <p className="mt-3 text-red-700">
               Visit our clinic for consultations, preventive care, and personalized treatment
               plans.
             </p>
-            <div className="mt-6 space-y-2 text-blue-800">
+            <div className="mt-6 space-y-2 text-red-800">
               <p>Strada Maria Rosetti 26A, Bucuresti 020487</p>
               <p>Phone: 0720.123.123</p>
               <p>Monday - Saturday: 09:00 - 20:00</p>
             </div>
           </div>
 
-          <div className="overflow-hidden rounded-2xl border border-blue-100 shadow-sm">
+          <div className="overflow-hidden rounded-2xl border border-red-100 shadow-sm">
             <iframe
               title="Veterinary clinic map"
               src="https://maps.google.com/maps?q=Strada%20Maria%20Rosetti%2026A%2C%20Bucure%C8%99ti%20020487&t=&z=15&ie=UTF8&iwloc=&output=embed"
@@ -246,7 +246,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <footer className="border-t border-blue-200 bg-blue-950 py-8 text-blue-100">
+      <footer className="border-t border-red-200 bg-red-950 py-8 text-red-100">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 px-4 text-sm md:flex-row md:items-center md:justify-between">
           <p>© {new Date().getFullYear()} Rosetti Vet Clinic. All rights reserved.</p>
           <p>Elegant design, clear communication, trusted care.</p>
